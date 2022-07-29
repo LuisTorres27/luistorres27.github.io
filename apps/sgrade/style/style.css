@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.main-contenedor{
+    width: 1024px;
+    height: auto;
+    margin: 50px auto;
+    clear: both;
+}
+
+.section{ 
+    width: inherit;
+    height: auto;
+    margin-top: 50px;
+}
+
+.logo-contenedor{  
+    width: 80px;
+    height: auto;
+    margin: 10px auto;
+}
+
+.logo-contenedor img{
+    width: inherit;
+    height: auto;
+}
+
+.description-contenedor{  
+    width: inherit;
+    height: auto;
+}
+
+.description-contenedor p{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.user{
+    border: 1px solid white;
+    width: 250px;
+    height: 200px;
+    margin-top: 50px;
+    transition: all 0.4s ease-in-out;
+    float: left;
+    
+}
+
+.user:hover{ 
+    transform: scale(105%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #EEEEEE;
+    cursor: pointer;
+    color: #355764;
+}
+
+.user:not(last-child){
+    margin-left: 170px;
+}
+
+.avatar-contenedor{ 
+    width: 70px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.avatar-contenedor img{
+    width: inherit;
+    height: auto;
+}
+
+h1{
+    font-size: 26px;
+    text-align: center;
+    color: #355764;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h5{
+    font-size: 16px;
+    color: white;
+}
+
+.cv {
+    width: 300px;
+    height: auto;
+    margin: 20px 50px;
+}
+
+.cv img {
+    width: 55px;
+    height: auto;
+}
+
+.footer {
+    background-color: #413F42;
+    width: 100%;
+    margin-top: 50px;
+    height: 180px;
+    float: left;
+    clear: both;
+}
+
+.footer p {
+    color: white;
+    
+}
+
+/* diseño responsivo laptop*/
+
+@media screen and (max-width:1440px){
+    .cv {
+        width: 300px;
+        height: auto;
+        margin: 20px 50px;
+    }
+    
+    .cv img {
+        width: 55px;
+        height: auto;
+    }
+    
+    .footer {
+        background-color: #413F42;
+        width: 100%;
+        margin-top: 50px;
+        height: 160px;
+        float: left;
+        clear: both;
+    }
+
+    .footer p {
+       font-size: 14px;
+        
+    }
+}
+
+/* diseño responsivo smartphones*/
+
+@media screen and (max-width:854px){
+
+    .main-contenedor{
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+    }
+    
+    .section{ 
+        width: inherit;
+        height: auto;
+        margin-top: 50px;
+    }
+    
+    .logo-contenedor{  
+        width: 60px;
+        height: auto;
+        margin: 10px auto;
+    }
+    
+    .logo-contenedor img{
+        width: inherit;
+        height: auto;
+    }
+    
+    .description-contenedor{  
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    
+    .description-contenedor p{
+        font-size: 16px;
+        text-align: center;
+        text-align: justify;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .user{
+        border: 1px solid white;
+        display: block;
+        width: 300px;
+        height: 150px;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px #EEEEEE;
+        cursor: pointer;
+        float: none;
+    }
+    
+    .user:hover{
+        transition: none;
+        transform: none;
+    }
+    
+    .user:not(last-child){
+        margin: 20px auto;
+    }
+    
+    .avatar-contenedor{ 
+        width: 60px;
+        height: auto;
+        margin: 20px auto;
+    }
+    
+    .avatar-contenedor img{
+        width: inherit;
+        height: auto;
+    }
+    
+    h1{
+        font-size: 22px;
+        text-align: center;
+        color: #355764;
+        margin-bottom: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    h3{
+        font-size: 14px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h5{
+        font-size: 12px;
+    }
+
+    .cv {
+        width: 300px;
+        height: auto;
+        margin: 0px 5px;
+        padding: 10px;
+    }
+
+    .cv img {
+        width: 30px;
+        height: auto;
+    }
+
+    .footer {
+        width: 100%;
+        height: 110px;
+        margin-top: 20px;
+    }
+
+    .footer p {
+        font-size: 12px;
+        color: white;
+    }
+}
+
+
+

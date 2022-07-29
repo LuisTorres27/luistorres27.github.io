@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/apps/sgrade/style/calculator.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Calcula tu nota</h1>
+    </header>
+
+    <div class="main-contenedor">
+
+        <div class="logo-contenedor">
+            <img src="/apps/sgrade/img/logo.png" alt="">
+
+        </div>
+
+        <div class="description">
+            <p>Ingresa las notas y da click en aceptar. <span>Nota:</span> las primeras 4 notas tienen un valor del 60%,
+                el examen de 20%, la autoevaluación y la actitud de 10%</p>
+        </div>
+
+        <div class="calculator-contenedor">
+
+            <div class="tboxes">
+
+                <form id="formulario">
+                    <input type="text" required maxlength="3" placeholder="Nota 1" name="box1" id="box1">
+                    <input type="text" required maxlength="3" placeholder="Nota 2" name="box2" id="box2">
+                    <input type="text" required maxlength="3" placeholder="Nota 3" name="box3" id="box3">
+                    <input type="text" required maxlength="3" placeholder="Nota 4" name="box4" id="box4">
+                    <input type="text" required maxlength="3" placeholder="Examen" name="box5" id="box5">
+                    <input type="text" required maxlength="3" placeholder="Autoevaluación" name="box6" id="box6">
+                    <input type="text" required maxlength="3" placeholder="Actitúd" name="box7" id="box7">
+
+                    <div class="boton-contenedor">
+                        <button id="miBoton" type="button">Aceptar</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+        <div class="mensaje">
+            <p id="muestra">Su nota final es de:</p>
+            <div class="calculo" id="calculo">
+                <img src="/apps/sgrade/img/einstein.png">
+            </div>
+        </div>
+    </div>
+
+    <script src="/apps/sgrade/calculator.js"></script>
+</body>
+
+</html>
